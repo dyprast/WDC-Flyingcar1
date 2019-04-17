@@ -1,0 +1,232 @@
+@font-face {
+	font-family: 'Muli-Regular';
+	src: url('../fonts/Muli-Regular.ttf');
+}
+@font-face {
+	font-family: 'Muli-Bold';
+	src: url('../fonts/Muli-Bold.ttf');
+}
+
+
+* {
+	font-family: 'Muli-Regular';
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+body 
+{
+	position: relative;
+	font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Muli-Bold';
+}
+
+.responsive-img 
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.cover-img 
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container 
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row + .row 
+{
+	margin-top: 15px;
+}
+
+[class*="col-"]
+{
+	padding: 15px;
+}
+
+[class*="col-"].no-pad-horizontal
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.col-auto
+{
+	flex:none;
+	width: 100%;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+.flex-direction-column{
+	flex-direction: column;
+}
+.no-padding{
+	padding: 0;
+}
+.padding-top-5{
+	padding-top: 5px;
+}
+.padding-top-15{
+	padding-top: 15px;
+}
+.width-100-per{
+	width: 100%;
+}
+.height-100-per{
+	height: 100%;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-around {
+	justify-content: space-around;
+}
+
+.m-a {
+	margin: auto;
+}
+.p-t-25{
+	padding-top: 25px;
+}
+
+.align-items-center {
+	align-items: center
+}
+.flex-wrap-wrap{
+	flex-wrap: wrap;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.form-group {
+	margin: 20px 0;
+}
+
+.form-control {
+	padding: 10px 15px;
+	border-radius: 2px;
+	border: none;
+}
+.fixed{
+	position: fixed;
+}
+
+.col-1 { flex: none; width: calc(100% / 12 * 1)}
+.col-2 { flex: none; width: calc(100% / 12 * 2)}
+.col-3 { flex: none; width: calc(100% / 12 * 3)}
+.col-4 { flex: none; width: calc(100% / 12 * 4)}
+.col-5 { flex: none; width: calc(100% / 12 * 5)}
+.col-6 { flex: none; width: calc(100% / 12 * 6)}
+.col-7 { flex: none; width: calc(100% / 12 * 7)}
+.col-8 { flex: none; width: calc(100% / 12 * 8)}
+.col-9 { flex: none; width: calc(100% / 12 * 9)}
+.col-10 { flex: none; width: calc(100% / 12 * 10)}
+.col-11 { flex: none; width: calc(100% / 12 * 11)}
+.col-12 { flex: none; width: calc(100% / 12 * 12)}
+
+@media screen and (min-width: 576px) 
+{
+	.col-auto {
+		flex-grow: 1;
+		flex-basis: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px)
+{
+	.container {
+		width: 720px;
+	}
+
+	.col-md-1 { flex: none; width: calc(100% / 12 * 1)}
+	.col-md-2 { flex: none; width: calc(100% / 12 * 2)}
+	.col-md-3 { flex: none; width: calc(100% / 12 * 3)}
+	.col-md-4 { flex: none; width: calc(100% / 12 * 4)}
+	.col-md-5 { flex: none; width: calc(100% / 12 * 5)}
+	.col-md-6 { flex: none; width: calc(100% / 12 * 6)}
+	.col-md-7 { flex: none; width: calc(100% / 12 * 7)}
+	.col-md-8 { flex: none; width: calc(100% / 12 * 8)}
+	.col-md-9 { flex: none; width: calc(100% / 12 * 9)}
+	.col-md-10 { flex: none; width: calc(100% / 12 * 10)}
+	.col-md-11 { flex: none; width: calc(100% / 12 * 11)}
+	.col-md-12 { flex: none; width: calc(100% / 12 * 12)}
+
+}
+
+@media screen and (min-width: 992px)
+{
+	.container {
+		width: 960px;
+	}
+
+	.col-lg-1 { flex: none; width: calc(100% / 12 * 1)}
+	.col-lg-2 { flex: none; width: calc(100% / 12 * 2)}
+	.col-lg-3 { flex: none; width: calc(100% / 12 * 3)}
+	.col-lg-4 { flex: none; width: calc(100% / 12 * 4)}
+	.col-lg-5 { flex: none; width: calc(100% / 12 * 5)}
+	.col-lg-6 { flex: none; width: calc(100% / 12 * 6)}
+	.col-lg-7 { flex: none; width: calc(100% / 12 * 7)}
+	.col-lg-8 { flex: none; width: calc(100% / 12 * 8)}
+	.col-lg-9 { flex: none; width: calc(100% / 12 * 9)}
+	.col-lg-10 { flex: none; width: calc(100% / 12 * 10)}
+	.col-lg-11 { flex: none; width: calc(100% / 12 * 11)}
+	.col-lg-12 { flex: none; width: calc(100% / 12 * 12)}
+
+}
+
+@media screen and (min-width: 1200px)
+{
+	.container {
+		width: 1140px;
+	}
+
+	.col-xl-1 { flex: none; width: calc(100% / 12 * 1)}
+	.col-xl-2 { flex: none; width: calc(100% / 12 * 2)}
+	.col-xl-3 { flex: none; width: calc(100% / 12 * 3)}
+	.col-xl-4 { flex: none; width: calc(100% / 12 * 4)}
+	.col-xl-5 { flex: none; width: calc(100% / 12 * 5)}
+	.col-xl-6 { flex: none; width: calc(100% / 12 * 6)}
+	.col-xl-7 { flex: none; width: calc(100% / 12 * 7)}
+	.col-xl-8 { flex: none; width: calc(100% / 12 * 8)}
+	.col-xl-9 { flex: none; width: calc(100% / 12 * 9)}
+	.col-xl-10 { flex: none; width: calc(100% / 12 * 10)}
+	.col-xl-11 { flex: none; width: calc(100% / 12 * 11)}
+	.col-xl-12 { flex: none; width: calc(100% / 12 * 12)}
+
+}

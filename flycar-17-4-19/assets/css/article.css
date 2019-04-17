@@ -1,0 +1,9 @@
+.box-news-content p, .box-news-content ul, .box-news-content ul li{
+    margin-top: 15px;
+    line-height: 28px;
+    font-size: 16px;
+}
+.box-news-content ul li{
+    font-size: 16px;
+    margin-left: 35px;
+}
