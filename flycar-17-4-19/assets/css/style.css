@@ -6,6 +6,7 @@
 	padding: 10px 14px;
 	border-radius: 2px;
 	outline: none;
+	cursor: pointer;
 }
 .btn.btn-primary{
 	background-color: #1e90ff;
@@ -659,6 +660,7 @@ p {
 .img-news.footer_{
 	width: 50px;
 	height: 50px;
+	object-fit: cover;
 	border-radius: 50%;
 }
 .card-content.footer_{
@@ -754,7 +756,8 @@ p {
 }
 
 .section.article{
-	padding: 0 350px;
+	margin-top: -40px;
+	/*padding: 0 350px;*/
 }
 .news-header{
 	color: #fff !important;
@@ -773,11 +776,14 @@ p {
 	overflow: hidden;
 }
 .box-news-image{
+	padding: 20px;
+	justify-content: center;
 	display: flex;
 }
 .box-news-image img{
-	width: 100%;
+	width: 50%;
 	height: 300px;
+	object-fit: cover;
 }
 .box-news-header{
 	letter-spacing: .5px;
@@ -816,7 +822,70 @@ p {
 	background-size: contain;
 }
 
+
+@media screen and (min-width: 996px) {
+	.navbar {
+		height: 80px;
+	}
+}
 @media screen and (max-width: 996px) {
+	.nav-right {
+		display: none;
+	}
+	
+
+	.nav-mid {
+		/*display: none;*/
+	}
+
+	.nav-mid > ul {
+		display: none;
+		padding: 10px 0;
+		background-color: #fff;
+		color: #000;
+		z-index: 2;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.nav-mid li {
+		cursor: pointer;
+	}
+
+	.nav-mid .nav-link {
+		display: block;
+		padding: 5px;
+		color: #444 !important;
+	}
+	.navbar {
+		height: 70px;
+	}
+
+	.nav-mid .nav-link:hover {
+		color: #000 !important;
+	}
+	.navbar{
+		height: 80px;
+		padding: 20px 20px 10px 20px !important;
+	}
+	.nav-left{
+		width: auto;
+	}
+	.navbar-nav .nav-item{
+		margin-left: 0;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.section-header{
+		padding: 0 30px;
+	}
 	.content-header{
 		min-height: 450px;
 	}
@@ -841,6 +910,7 @@ p {
 	.nav-mid .navbar-nav{
 		text-align: center;
 		justify-content: center;
+		margin-top: 20px;
 	}
 	.nav-right{
 		width: 100%;
@@ -874,65 +944,28 @@ p {
 		height: 250px;
 		object-fit: contain;
 	}
+	.box {
+		text-align: center;
+	}
+	.box-header > .circle-icon {
+		margin: auto;
+	}
 }
 
-@media screen and (max-width: 576px) {
-	.nav-right {
-		display: none;
+@media screen and (max-width: 1200px) {
+	.wave {
+		bottom: -20px;
 	}
+}
+
+@media screen and (max-width: 768px) {
 	.flat-img.header{
 		display: none;
 	}
+}
 
-	.nav-mid {
-		/*display: none;*/
-	}
-
-	.nav-mid > ul {
-		display: none;
-		padding: 10px 0;
-		background-color: #fff;
-		color: #000;
-		z-index: 2;
-		position: absolute;
-		top: 70px;
-		left: 0;
-		right: 0;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.nav-mid li {
-		cursor: pointer;
-	}
-
-	.nav-mid .nav-link {
-		display: block;
-		padding: 5px;
-		color: #444 !important;
-	}
-
-	.nav-mid .nav-link:hover {
-		color: #000 !important;
-	}
-	.navbar{
-		height: 80px;
-		padding: 20px 20px 10px 20px;
-	}
-	.nav-left{
-		width: auto;
-	}
-	.navbar-nav .nav-item{
-		margin-left: 0;
-	}
-
-	.burger {
-		display: block;
-	}
-
-	.section-header{
-		padding: 0 30px;
-	}
+@media screen and (max-width: 576px) {
+	
 	.section.services{
 		padding: 40px 0;
 	}
